@@ -6,7 +6,7 @@ library(ggpubr) #For plotting
 setwd("C:/Users/tao_1/OneDrive/Documents/Fall2021/ABE305/Data_csv")
 
 #read csv file
-df <- read.csv("266.csv", skip = 7)
+df <- read.csv("300.csv", skip = 7)
 
 #find the maximum load N and corresponding extention
 max_load = df$N[which.max(df$N)]
@@ -21,3 +21,4 @@ ggplot(df, aes(x = mm, y = N)) +
   theme(plot.title = element_text(hjust = 0.5)) + 
   xlab("Extension (mm)") +
   ylab("Load (N)")
+
